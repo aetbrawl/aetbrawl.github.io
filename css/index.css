@@ -1,0 +1,447 @@
+
+
+.content {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 70px;
+    height: 550px;
+}
+
+
+.c-left {
+    position: absolute;
+    z-index: -10;
+    width: 350px;
+    transform: rotate(18deg);
+    margin-left: -90px;
+    margin-top: 80px;
+}
+
+.c-right {
+    position: absolute;
+    z-index: -10;
+    width: 280px;
+    transform: rotate(-5deg);
+    right: 0;
+    margin-right: -60px;
+    margin-top: -10px;
+}
+
+.c-left img{
+    width: 100%;
+}
+
+.c-right #big{
+    width: 100%;
+}
+
+.c-right #smol{
+    display: none;
+    width: 0;
+}
+
+.title {  
+    width: 100%;
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.title #big{
+    display: block;
+    font-family: "Noto Sans TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 65px;
+    letter-spacing: 5px;
+    color: rgb(88,179,246);
+    background: -webkit-linear-gradient(137deg, rgba(88,179,246,1) 0%, rgba(115,233,178,1) 100%); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title #smol{
+    display: none;
+}
+
+.subtitle {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle h1{
+    font-family: "Noto Sans TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(161, 161, 161);
+}
+
+
+.button-space {
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    height: 50px;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #fff;
+    background: -webkit-linear-gradient(137deg, rgba(88,179,246,1) 0%, rgba(115,233,178,1) 100%); 
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    border: none;
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+
+.sec1 {
+    height: 500px;
+    background-color: rgb(105, 105, 105);
+    overflow: auto; 
+    padding: 60px;
+}
+
+.swipe1 {
+    position: absolute;
+    left: 0;
+    margin-left: -120px;
+    margin-top: -180px;
+    width: 4600px;
+    height: 150px;
+    background-color: rgb(52, 52, 52);
+    transform: rotate(-4deg);
+    overflow: hidden;
+    align-items: center;      
+}
+
+.swipe1-inner {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrolling 100s linear infinite;
+}
+
+.swipe1-inner span{
+    display: inline-block;
+    padding: 0 2rem; 
+    font-size: 7.2rem;
+    color: #5e5e5e;
+    background: radial-gradient(#4f4f4f 50%,#3a3a3a 50%);
+    background-size: 6px 6px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Noto Sans TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+@keyframes scrolling {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+.sec1-content-container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec1-content-left{
+    margin-left: 6vw;
+    width: 45vw;
+    font-size: 20px;
+    font-family: "Noto Sans TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    color: rgb(232, 232, 232);
+}
+
+.sec1-content-right{
+    margin-top: -40px;
+    margin-right: 6vw;
+}
+
+.sec1-content-right img{
+    width: 300px;
+}
+
+
+
+
+
+            @media screen and (max-width:900px) { 
+               body {
+                    overflow-x: hidden;
+               }
+                
+                .content {
+                    left: 0;
+                    right: 0;
+                    width: 100vw;
+                    margin-top: 70px;
+                    height: 590px;
+                    overflow-x: hidden;
+                    box-sizing: border-box;
+                }
+                 
+                .c-left {
+                    display: none;
+                }
+                
+                .c-right {
+                    position: absolute;
+                    z-index: 10;
+                    width: 150px;
+                    overflow-x: hidden;
+                    margin-right: -45px;
+                    margin-top: 358px;
+                    transform: rotate(0deg);
+                }
+                
+                .c-right #big{
+                    width: 0;
+                    display: none;
+                }
+
+                .c-right #smol{
+                    display: block;
+                    width: 100%;
+                }
+                
+                .title {
+                    width: 280px;
+                    margin-left: 10vw;
+                    margin-top: 70px;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .title #big{
+                    display: none;
+                }
+
+                .title #smol{
+                    display: block;
+                    font-family: "Noto Sans TC", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 40px;
+                    letter-spacing: 3px;
+                    color: rgb(88,179,246);
+                    background: -webkit-linear-gradient(137deg, rgba(88,179,246,1) 0%, rgba(115,233,178,1) 100%); 
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin: 0;
+                }
+                
+                .subtitle {
+                    width: 250px;
+                    margin-top: 20px;
+                    margin-left: 10vw;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .subtitle h1{
+                    font-family: "Noto Sans TC", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 21px;
+                    letter-spacing: 1px;
+                    color: rgb(161, 161, 161);
+                }
+                
+                
+                .button-space {
+                    width: 200px;
+                    margin-left: 8vw;
+                    margin-top: 40px;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .button-28 {
+                    appearance: none;
+                    background-color: transparent;
+                    border: 1px solid #1A1A1A;
+                    border-radius: 15px;
+                    box-sizing: border-box;
+                    color: #3B3B3B;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin: 0;
+                    min-height: 60px;
+                    min-width: 0;
+                    outline: none;
+                    padding: 5px 5px;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    width: 150px;
+                    height: 30px;
+                    will-change: transform;
+                  }
+                  
+                  .button-28:disabled {
+                    pointer-events: none;
+                  }
+                  
+                  .button-28:hover {
+                    color: #fff;
+                    background: -webkit-linear-gradient(137deg, rgba(88,179,246,1) 0%, rgba(115,233,178,1) 100%); 
+                    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+                    transform: translateY(-2px);
+                    border: none;
+                  }
+                  
+                  .button-28:active {
+                    box-shadow: none;
+                    transform: translateY(0);
+                  }
+                
+                
+                .sec1 {
+                    height: 450px;
+                    background-color: rgb(105, 105, 105);
+                    overflow: hidden; 
+                    padding: 40px;
+                }
+                
+                .swipe1 {
+                    position: absolute;
+                    margin-top: -40px;
+                    width: 100vw;
+                    height: 110px;
+                    background-color: rgb(52, 52, 52);
+                    transform: rotate(0deg);
+                    overflow: hidden;
+                    align-items: center;
+                    margin-left: 0;     
+                }
+                
+                .swipe1-inner {
+                    display: inline-block;
+                    white-space: nowrap;
+                    animation: scrolling 100s linear infinite;
+                }
+                
+                .swipe1-inner span{
+                    display: inline-block;
+                    padding: 0 2rem; 
+                    font-size: 5.0rem;
+                    color: #5e5e5e;
+                    background: radial-gradient(#4f4f4f 50%,#3a3a3a 50%);
+                    background-size: 6px 6px;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-family: "Noto Sans TC", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: 5px;
+                }
+                
+                @keyframes scrolling {
+                    0% {
+                      transform: translateX(0%);
+                    }
+                    100% {
+                      transform: translateX(-50%);
+                    }
+                }
+                
+                
+                
+                
+                
+                .sec1-content-container{
+                    margin-top: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                }
+                
+                .sec1-content-left{
+                    margin-left: 6vw;
+                    width: 80vw;
+                    font-size: 17px;
+                    font-family: "Noto Sans TC", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    letter-spacing: 1.5px;
+                    color: rgb(232, 232, 232);
+                }
+                
+                .sec1-content-right{
+                    display: none;
+                }
+                
+
+            }

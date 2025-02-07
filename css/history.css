@@ -1,0 +1,113 @@
+
+.title_space {
+    height: 200px;
+    margin-top: 70px;
+    display: flex;
+    background: radial-gradient(#2e2e2e 50%,#4a4a4a 50%);
+    background-size: 5px 5px
+}
+
+.title h1{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 60px;
+    font-family: "Noto Sans TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+
+.sec1 {
+    height: 800px;
+    padding: 50px;
+    border-top: 2px solid rgb(170, 170, 170);
+}
+.sec_title {
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 30px;
+    font-family: "Funnel Display", serif;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    letter-spacing: 2px;
+}
+.sec_title.one h1{
+    margin: 0;
+    color: rgb(235, 109, 76);
+}
+.sec_title.two h1{
+    margin: 0;
+    color: rgb(106, 16, 245);
+}
+.sec1_content {
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 80vw;
+    color: #737373;
+}
+
+.sec1_content p a{
+    color: rgb(56, 56, 56);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sec1_content p a:hover{
+    color: rgb(176, 176, 176);
+}
+
+.sec1_count_container {
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.sec1_count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.sec1_count h1{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #d7d7d7;
+}
+.sec1_count h2{
+    margin: 0;
+    font-size: 40px;
+    font-family: "Funnel Display", serif;
+    font-weight: 700;
+    color: rgb(235, 109, 76);
+}
+.sec1_img_container {
+    display: flex;
+    width: 80vw;
+    margin-bottom: 40px;
+}
+.sec1_img {
+    margin-left: 40px;
+    margin-top: 55px;
+    font-size: 15px;
+    color: rgb(123, 123, 123);
+}
+.sec1_img img {
+    margin-top: 10px;
+    width: 150px;
+}
+.sec1_img p{
+    margin: 0;
+    width: 200px;
+}
+
+
+.sec2 {
+    height: 600px;
+    border-top: 2px solid rgb(78, 78, 78);
+}
